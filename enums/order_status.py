@@ -1,13 +1,14 @@
 import enum
 
+
 class OrderStatus(enum.Enum):
-    Cancel = 0
-    Unconfirmed = 1
-    InQueue = 2
-    OnServing = 3
-    Served = 4
-    Paid = 5
-    Complete = 6
+    CANCEL = 0
+    UNCONFIRMED = 1
+    IN_QUEUE = 2
+    ONSERVING = 3
+    SERVED = 4
+    PAID = 5
+    COMPLETE = 6
 
     @classmethod
     def choices(cls):
