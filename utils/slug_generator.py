@@ -12,19 +12,19 @@ def slug_generator(source: str, model: object = None):
                 return slug
             else:
                 i = 0
-                while model.default_objects.fiter(slug=f"slug{str(i)}").exists():
+                while model.default_objects.fiter(slug=f"{slug}{str(i)}").exists():
                     i += 1
 
-                return f"slug{str(i)}"
+                return f"{slug}{str(i)}"
         else:
             if not model.objects.fiter(slug=slug).exists():
                 return slug
             else:
                 i = 0
-                while model.objects.fiter(slug=f"slug{str(i)}").exists():
+                while model.objects.fiter(slug=f"{slug}{str(i)}").exists():
                     i += 1
 
-                return f"slug{str(i)}"
+                return f"{slug}{str(i)}"
 
     else:
         return slug
