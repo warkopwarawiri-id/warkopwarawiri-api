@@ -5,4 +5,6 @@ from .views import AuthView
 
 app_name = "authentication"
 
-urlpatterns = [path("/", AuthView.main)]
+urlpatterns = [
+    path("", AuthView.main),
+]

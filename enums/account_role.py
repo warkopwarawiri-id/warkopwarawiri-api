@@ -1,11 +1,13 @@
 import enum
 
+
 class AccountRole(enum.Enum):
-    Developer = 'dev'
-    Owner = 'owner'
-    Administrator = 'admin'
-    Staff = 'staff'
-    Guest = 'guest'
+    DEVELOPER = "Developer"
+    OWNER = "Owner"
+    ADMIN = "Admin"
+    STAFF = "Staff"
+    INTERNAL = "Internal"
+    GUEST = "Guest"
 
     @classmethod
     def choices(cls):
